@@ -2,46 +2,40 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 简介
 
-Let's discover **Docusaurus in less than 5 minutes**.
+[![Build status](https://github.com/SpringHgui/OpenTask/workflows/build/badge.svg)](https://github.com/SpringHgui/OpenTask/actions)
+[![Nuget](https://img.shields.io/nuget/v/OpenTask.Core)](https://www.nuget.org/packages/OpenTask.Core/)
 
-## Getting Started
+去中心设计的分布式任务调度平台，本项目不仅仅是创造一个新的轮子，旨在补充dotnet生态下分布式任务调度系统的空白，但本项目设计的并非只支持dotnet平台；
 
-Get started by **creating a new site**.
+调度中心与执行器的通讯协议采用mqtt协议，方便多种语言的快速接入，调度中心采用去中心化设计，各个调度中心之间亦采用mqtt协议通讯；
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+调度中心自动进行任务分片，以平均每个调度节点的负载。
 
-### What you'll need
+## 体验地址
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+http://opentask.run/  
+账号：admin  
+密码：OpenTask  
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**.
+## 仓库地址
 
-The classic template will automatically be added to your project after you run the command:
+[Github](https://github.com/SpringHgui/OpenTask)
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+[Gitee](https://gitee.com/SpringHgui/OpenTask)
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## 当前进度
+⚠⚠⚠ 当前尚处于开发初期，请勿在重要的生产环境中使用。
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- [x] web管理后台
+- [x] cron任务
+- [ ] 工作流（DAG）
+- [ ] 固定周期任务
+- [x] 调度中心集群部署
+- [x] 调度中心自动分片
+- [x] 任务重试
+- [ ] 任务故障转移
+- [ ] 进行中的任务支持取消
+- [x] 失败告警

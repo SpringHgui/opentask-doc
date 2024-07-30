@@ -3,8 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'OpenTask',
-  tagline: 'OpenTask are cool',
+  title: '5分钟部署一套分布式调度系统',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -59,18 +58,18 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'OpenTask',
-      logo: {
-        alt: 'OpenTask Logo',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'OpenTask Logo',
+      //   src: 'img/logo.svg',
+      // },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '文档',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/springhgui/OpenTask',
           label: 'GitHub',
