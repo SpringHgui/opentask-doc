@@ -1,7 +1,6 @@
 ---
 id: intro
 title: 简介
-lang: zh-CN
 description: FastTunnel使用手册
 ---
 
