@@ -67,7 +67,13 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '文档',
+          label: 'OpenTask',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'fastTunelSidebar',
+          position: 'left',
+          label: 'FastTunnel',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
